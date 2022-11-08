@@ -24,5 +24,8 @@ try:
             print("Port {} is open".format(port)
         s.close()
 
+except KeyboardInterrupt:
+                  print("\nExiting program.")
+                  sys.exit()
                   
         
