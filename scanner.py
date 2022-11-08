@@ -28,4 +28,10 @@ except KeyboardInterrupt:
                   print("\nExiting program.")
                   sys.exit()
                   
-        
+except socket.gaierror:
+                  print("Hostname could not be revolved.")
+                  sys.exit()
+
+except socket.error:
+                  print("Couldn't connect to server.")
+                  sys.exit()
