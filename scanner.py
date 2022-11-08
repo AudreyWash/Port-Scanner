@@ -13,4 +13,8 @@ else:
 print("-" * 50)
 print("Scanning target " + target)
 print("Time started: " + str(datetime.now()))
+print("-" * 50)
 
+try:
+    for port in range(50, 85):
+        
