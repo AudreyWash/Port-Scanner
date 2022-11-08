@@ -17,7 +17,7 @@ print("-" * 50)
 
 try:
     for port in range(50, 85):
-        s = socket.socker(socket.AF_INET, socket.SOCK STREAM)
+        s = socket.socket(socket.AF_INET, socket.SOCK STREAM)
         socket.setdefaulttimeout(1)
         result = s.connect_ex((target, port))
         if result == 0:
